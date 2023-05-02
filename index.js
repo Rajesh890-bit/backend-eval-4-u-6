@@ -21,7 +21,7 @@ app.use("/users", userRouter);
 //protected
 app.use(auth); // below this line routes are protected
 
-app.use("/post", noteRouter);
+app.use("/posts", noteRouter);
 
 app.listen(process.env.port, async () => {
   try {
